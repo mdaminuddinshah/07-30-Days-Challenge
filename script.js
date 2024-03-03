@@ -10,7 +10,8 @@ function gambar(){
     })
     .then(res => res.json())
     .then(data => data.photos.map(elem => (
-        `<img src="${elem.src.large}" style="width: 200px; height: 200px;"/>`
+        `<img src="${elem.src.large}" 
+        style="width: 200px; height: 200px; padding: 4px"/>`
     )))
     .then(result => 
         divtag.innerHTML = result)
